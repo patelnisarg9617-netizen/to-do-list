@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskForge • To‑Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">TaskForge</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Person using laptop planning tasks" />
+    <h1>Organize Your Day</h1>
+    <p>Add, edit, delete and track tasks with ease.</p>
+  </section>
+
+  <main class="container">
+    <section class="task-input">
+      <input type="text" id="newTaskInput" placeholder="New task..." />
+      <button id="addTaskBtn" class="btn primary">Add Task</button>
+    </section>
+
+    <section class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="active">Active</button>
+      <button class="filter-tab" data-filter="completed">Completed</button>
+    </section>
+
+    <ul id="taskList" class="task-list"></ul>
+  </main>
+
+  <!-- Slide‑over drawer for edit -->
+  <div id="drawer" class="drawer hidden" aria-hidden="true">
+    <div class="drawer-content">
+      <button class="drawer-close" aria-label="Close">✕</button>
+      <h2>Edit Task</h2>
+      <input type="text" id="editTaskInput" />
+      <button id="saveEditBtn" class="btn primary">Save</button>
+    </div>
+  </div>
+
+  <!-- Toast container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

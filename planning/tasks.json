@@ -1,0 +1,41 @@
+{
+  "project": "TaskForge",
+  "tasks": [
+    {
+      "id": 1,
+      "agent": "requirement",
+      "title": "Analyze project scope & brand requirements",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "agent": "architect",
+      "title": "Design technical blueprint & stack topology",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "agent": "database",
+      "title": "Client state validation (Database skipped)",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "agent": "backend",
+      "title": "Static hosting configuration (Backend skipped)",
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "agent": "frontend",
+      "title": "Generate semantic HTML, custom CSS theme, interactive JS & real imagery",
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "agent": "reviewer",
+      "title": "Audit code against color fidelity & feature verification",
+      "status": "pending"
+    }
+  ]
+}
